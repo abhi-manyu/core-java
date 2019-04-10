@@ -7,6 +7,7 @@ public class Demo1
 	System.out.println("this is main method");
 	first();
 	second();
+	third();
    }
    
    public static void first()
@@ -17,5 +18,10 @@ public class Demo1
    public static void second()
    {
 	   System.out.println("this is the second method");
+   }
+   
+   public static void third()
+   {
+	   System.out.println("this is the third method");
    }
 }
