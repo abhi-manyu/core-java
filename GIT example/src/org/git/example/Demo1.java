@@ -8,6 +8,7 @@ public class Demo1
 	first();
 	second();
 	third();
+	fourth();
    }
    
    public static void first()
@@ -23,5 +24,10 @@ public class Demo1
    public static void third()
    {
 	   System.out.println("this is the third method");
+   }
+   
+   public static void fourth()
+   {
+	   System.out.println("this is the fourth method");
    }
 }
