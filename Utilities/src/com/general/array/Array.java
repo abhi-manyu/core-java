@@ -1,4 +1,4 @@
-package com.general;
+package com.general.array;
 
 //there are 5 positive numbers in a array . u have to calculate
 // the sum of maximum 4 digits and sum of minimum 4 digits
