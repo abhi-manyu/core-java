@@ -9,7 +9,7 @@ public class ArrayRotation {
 	  System.out.println("orginal array is : "+Arrays.toString(arr));
 	  try
 	    {
-		  rotateToLeft(arr, 9);
+		  rotateToLeft(arr, 2);
 	    }
 	  catch (Exception e)
 	  {
@@ -31,5 +31,6 @@ public class ArrayRotation {
 		  arr[i]=temp[j];
 	  }
 	  System.out.println("rotated array is : "+Arrays.toString(arr));
+	  
   }
 }
