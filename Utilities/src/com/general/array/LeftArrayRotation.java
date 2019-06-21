@@ -17,6 +17,11 @@ public class LeftArrayRotation {
   
   public static void reverseArray(int[] arr, int num)
   {
+	  // here first i took out the temp array that contains the no of rotated elements
+	  // then i shifted elements and then place the elements in place of which the datas are shifted
+	  
+	  
+	  
 	 int[] temp=Arrays.copyOfRange(arr, arr.length-num,arr.length);
 	 //System.out.println(Arrays.toString(temp));
 	 for(int i=arr.length-1;i>=num && i>0;i--)
