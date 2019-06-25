@@ -8,7 +8,7 @@ public class RecurssiveBubbleSort
 	
 	public static void main(String[] args)
 	{
-		int[] arr={59,61,84,29,47};
+		int[] arr={59,61,84,29,47,49,24,43};
 		System.out.println("orginal array : "+Arrays.toString(arr));
 		bubbleSort(arr,arr.length);
 		System.out.println("sorted is : "+Arrays.toString(arr));
