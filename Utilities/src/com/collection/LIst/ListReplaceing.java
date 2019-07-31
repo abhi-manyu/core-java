@@ -1,4 +1,4 @@
-package com.general;
+package com.collection.LIst;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -34,6 +34,5 @@ public class ListReplaceing
  	  System.out.println("index ----2 "+emplist.get(2));
  	    
  	    System.out.println(emplist);
- 		
 	}
 }
