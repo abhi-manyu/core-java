@@ -10,8 +10,8 @@
       
       File f3= new File("the specified directory" ,  "filename to b created");
 	  i.e 
-	      File f3= new File("C:\\abhi\\GIT_HUB\\GIT\\GIT_local\\core-java\\Utilities\\src\\com\\" 
-				+"files\\basics" ,  "example.txt");
+	      File f3= new File("C:\abhi\GIT_HUB\GIT\GIT_local\core-java\Utilities\src\com\" 
+				+"files\basics" ,  "example.txt");
 				
 				
 4---//creating new folder and create a new file inside that
@@ -21,8 +21,8 @@
    
    i.e-
 		
-		File folder=new File("C:\\abhi\\GIT_HUB\\GIT\\GIT_local\\core-java\\Utilities\\src\\com\\" 
-				+ "files\\basics","folder");
+		File folder=new File("C:\abhi\GIT_HUB\GIT\GIT_local\core-java\Utilities\src\com\" 
+				+ "files\basics","folder");
 		folder.mkdir();
 		
 		File file=new File(folder,"file.txt");
@@ -64,3 +64,29 @@ Checking weather a file object referring to a file or a directory/folder
   file.createNewFile(); **created**
   Thred.sleep(5000);
   file.delete(); **deleted**
+
+8---Counting number of character in a file : 
+   File file=new File("C:\abhi\GIT_HUB\GIT\GIT_local\core-java\Utilities\src\com\files\basics","file.txt");
+		file.createNewFile();
+		System.out.println("created");
+		
+		//printing the length / characters present in the referenced file
+		System.out.println("the length of the file is : "+file.length());
+
+9---- methods of IO File system : 
+Followings are the important methods for IO operations: 
+   Let File f= new File(“abc.txt”);
+
+   f.createNewFile(); returns Boolean
+   f.exists(); returns Boolean
+   f.mkdir(); returns Boolean
+   f.isFile(); returns Boolean
+   f.isDirectory(); returns Boolean
+   String[] arr= f.list(); returns array of Strings
+   Long length= f.lenght(); returns a long type number
+   f.delete(); returns Boolean
+
+
+
+
+  
