@@ -1,6 +1,5 @@
 package com.general.guessing_Game;
 
-import java.awt.Choice;
 import java.util.Scanner;
 
 public class Car {
