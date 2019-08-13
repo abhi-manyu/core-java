@@ -1,0 +1,66 @@
+1---we can create file by giving the path with the file name as well like bellow, 
+    also we can specify the type of the file like abc.txt or abc.doc etc
+2---we also can create folder by java file object cuz java file concept is implemented from UNIX commands
+  i.e creating a new folder in specified path
+		File f2=new File("C:\abhi\GIT_HUB\GIT\GIT_local\core-java\Utilities\src\com\files\basics\second");
+   this will create a folder named second in the specified directory
+
+3--- we can create a file in a specified directory by specifying the directory and the file name at same
+      time and also by the following constructor as well
+      
+      File f3= new File("the specified directory" ,  "filename to b created");
+	  i.e 
+	      File f3= new File("C:\\abhi\\GIT_HUB\\GIT\\GIT_local\\core-java\\Utilities\\src\\com\\" 
+				+"files\\basics" ,  "example.txt");
+				
+				
+4---//creating new folder and create a new file inside that
+   
+   first create a directory or folder by mkdir() or else exception will b thrown then create a file 
+   inside that folder reference.
+   
+   i.e-
+		
+		File folder=new File("C:\\abhi\\GIT_HUB\\GIT\\GIT_local\\core-java\\Utilities\\src\\com\\" 
+				+ "files\\basics","folder");
+		folder.mkdir();
+		
+		File file=new File(folder,"file.txt");
+	    file.createNewFile();				
+				
+Checking weather a file object referring to a file or a directory/folder	
+
+5---File folder=new File("C:\abhi\GIT_HUB\GIT\GIT_local\core\java\Utilities\src\com\files\basics" , "folder");
+    folder.createNewFile();
+		
+  Checking , weather it is a folder
+  System.out.println("is this a file : "+folder.isFile());------returns false
+
+  Checking , weather it is a file
+  System.out.println("is this a folder : "+folder.isDirectory());----- returns True
+
+
+  File file=new File(folder,"file.txt");
+  file.createNewFile();
+  System.out.println("is this a file : "+file.isFile());------returns true
+  System.out.println("is this a folder : "+file.isDirectory() );returns false
+  
+
+6-----Counting number of elements in a directory : 
+  This returns all names in the form of array of Strings 
+  i.e. – 
+  here basic is the pre created folder that is being pointed.
+  File count = new File("C:\abhi\GIT_HUB\GIT\GIT_local\core\java\Utilities\src\com\files\
+  Basics”);
+   String[] counts = count . list();
+  For(String name : counts ) 
+   {
+     System.out.println(name);
+   };
+   
+7--- dELETING a file or folder : 
+  here it is refering a file named "file.txt" that to be created first and then to b deleted;
+  File file = new File("C:\abhi\GIT_HUB\GIT\GIT_local\core-java\Utilities\src\com\files\basics\file.txt”);
+  file.createNewFile(); **created**
+  Thred.sleep(5000);
+  file.delete(); **deleted**
