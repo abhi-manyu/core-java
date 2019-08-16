@@ -42,7 +42,7 @@ public class FileBasic {
 		//System.out.println("is this a folder : "+folder.isDirectory());
 
 		
-		/*File file=new File("C:\\abhi\\GIT_HUB\\GIT\\GIT_local\\core-java\\Utilities\\src\\com\\" 
+		File file=new File("C:\\abhi\\GIT_HUB\\GIT\\GIT_local\\core-java\\Utilities\\src\\com\\" 
 				+ "files\\basics","file.txt");
 	    file.createNewFile();
 	    System.out.println("created");
@@ -56,7 +56,7 @@ public class FileBasic {
 	    	dot_counter++;
 	    }
 	    System.out.println();
-	    System.out.println("file deleted : "+file.delete());*/
+	    System.out.println("file deleted : "+file.delete());
 	    
 	    
 	    //System.out.println("is this a file : "+file.isFile());
@@ -66,16 +66,16 @@ public class FileBasic {
 		String[] counts=count.list();
 		for(String name : counts) {
 			System.out.println(name);
-		}*/
+		}
 	    
 	    
-		File file=new File("C:\\abhi\\GIT_HUB\\GIT\\GIT_local\\core-java\\Utilities\\src\\com\\" 
+		/*File file=new File("C:\\abhi\\GIT_HUB\\GIT\\GIT_local\\core-java\\Utilities\\src\\com\\" 
 				+ "files\\basics" , "file.txt");
 		file.createNewFile();
 		System.out.println("created");
 		
 		//printing the length / characters present in the referenced file
-		System.out.println("the length of the file is : "+file.length());
+		System.out.println("the length of the file is : "+file.length());*/
 	    
 	    
 	    

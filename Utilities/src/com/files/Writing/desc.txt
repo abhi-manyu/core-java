@@ -1,0 +1,10 @@
+File Writing in JAVA IO
+-------------------------------------
+- we can write into our files in the simplest way by creating a object of FileWriter.
+and then by write().
+i.e
+   File file = new File("C:\\abhi\\GIT_HUB\\GIT\\GIT_local\\core-java\\Utilities\\src\\com\\files\\Writing","out.xls");
+   file.createNewFile();
+   FileWriter fw = new FileWriter(file);
+   fw.write("this is the output written to the file");
+   fw.flush();
