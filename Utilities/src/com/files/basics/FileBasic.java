@@ -78,8 +78,6 @@ public class FileBasic {
 		System.out.println("the length of the file is : "+file.length());*/
 	    
 	    
-	    
-	    
 	}
 
 }
