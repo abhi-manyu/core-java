@@ -25,7 +25,7 @@ public class FileReading {
 		int number = fr.read();
 		while(number != -1)
 		{
-			System.out.print(number);
+			System.out.print((char)number);
 			number = fr.read();
 		}
 		
