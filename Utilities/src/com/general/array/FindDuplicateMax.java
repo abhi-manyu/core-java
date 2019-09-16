@@ -9,7 +9,7 @@ public class FindDuplicateMax
 {
 	public static void main(String[] args)
 	{
-		int[] arr= {376,81,376,79,79,203,79};
+		int[] arr= {376,81,376,79,79,203,376};
 		arrayToList(arr);
 	}
 	

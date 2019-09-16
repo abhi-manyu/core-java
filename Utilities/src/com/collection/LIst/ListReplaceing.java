@@ -1,9 +1,6 @@
 package com.collection.LIst;
 
 import java.util.ArrayList;
-import java.util.Iterator;
-
-import com.collection.LIst.Employee;
 
 public class ListReplaceing
 {

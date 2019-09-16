@@ -17,7 +17,7 @@ class LinkedListClass
 	   list.add(45);
 	   list.add(84);
 	   list.add(68);
-	   list.add(87);
+	   list.add(89);
 	   
 	   Iterator<Integer> itr=list.iterator();
 	   int index=0,near_Back=0,near_Next=0,nearest=0;

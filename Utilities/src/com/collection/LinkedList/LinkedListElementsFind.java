@@ -15,7 +15,6 @@ public class LinkedListElementsFind
 		   list.push(87);
 		   list.push(84);
 		   list.push(87);
-		   list.push(84);
 		   
 		   findOccurances(list);
 	}
