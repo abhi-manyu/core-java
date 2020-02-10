@@ -17,6 +17,7 @@ public class MessageMaps
     	messages.put(2,m2);
     	System.out.println(messages);
     	addtoMap(1, m3,messages);
+    	System.out.println("the size of the map is : "+messages.size());
     	
 	}
     public static void addtoMap(int pos,Message msg,Map<Integer,Message> temp)

@@ -27,7 +27,8 @@ public class Maps
 	  {
 		  String city=itr.next();
 		  if(city.equals("Boston"))
-			  itr.remove();
+			  //itr.remove();
+			  li.remove("Boston");
 	  }
 	  
 	  System.out.println("as a list after delete : "+li);

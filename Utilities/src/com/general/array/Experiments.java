@@ -12,7 +12,7 @@ public class Experiments
 		names.add("Loki");
 		names.add("Oddin");
 		System.out.println(names.size());
-		names.add("Thanos");
+		names.add(4,"Thanos");
 		System.out.println(names.size());
 }
 }
