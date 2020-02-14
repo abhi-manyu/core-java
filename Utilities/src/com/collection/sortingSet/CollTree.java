@@ -1,9 +1,11 @@
 package com.collection.sortingSet;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+
+import com.collection.Set.Student;
 
 public class CollTree {
 
@@ -15,13 +17,20 @@ public class CollTree {
         st.add(new Employee(146,"Sambit",29));
         st.add(new Employee(147,"Ali",35));
         st.add(new Employee(148,"Lila",46));
+        st.add(null);
+        
         System.out.println("The employee list are given below ");
         for(Employee s:st){
            System.out.println(s.getId()+" "+s.getName()+" "+s.getAge());
            
         }
-
-
+        
+        
+       System.out.println("after sorting the list : \n");
+       for(Employee s:st){
+           System.out.println(s.getId()+" "+s.getName()+" "+s.getAge());
+           
+        }
 	}
 
 }

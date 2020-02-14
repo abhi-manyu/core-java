@@ -17,6 +17,11 @@ public class Rough
 		
 		System.out.println(maps);
 		
+		int s1 = 'A';
+		int s2 = 'a';
+		System.out.println("the capital A is : "+s1);
+		System.out.println("the small a is : "+s2);
+		
 
 	}
 

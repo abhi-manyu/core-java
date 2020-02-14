@@ -26,12 +26,23 @@ public class Employee implements Comparator<Employee>{
     }
 	@Override
 	public int compare(Employee emp1, Employee emp2) {
-		/*if(emp1.getId()>emp2.getId())
-			return 1;
-		else if(emp1.getId()<emp2.getId())
+		if(emp1.getId()>emp2.getId())
 			return -1;
-		else return 0;*/
-		return compare(emp2, emp1);
+		else if(emp1.getId()<emp2.getId())
+			return 1;
+		else return 0;
 	}
+	/*@Override
+	public int compareTo(Employee emp1) {
+		if(emp1!=null)
+		{
+			if(emp1.getId()>this.getId())
+				return 1;
+			else if(emp1.getId()<this.getId())
+				return -1;
+			else return 0;
+		}
+		return -1;
+	}*/
 
 }
