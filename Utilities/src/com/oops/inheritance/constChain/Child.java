@@ -1,4 +1,4 @@
-package com.inheritance.general.constChain;
+package com.oops.inheritance.constChain;
 
 
 public class Child extends Parent

@@ -1,4 +1,4 @@
-package com.inheritance.general.inheritance;
+package com.oops.inheritance.upcasting;
 
 public class Client
 {

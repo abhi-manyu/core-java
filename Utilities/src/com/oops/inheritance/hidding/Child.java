@@ -1,4 +1,4 @@
-package com.inheritance.general.hidding;
+package com.oops.inheritance.hidding;
 
 public class Child extends Parent
 {

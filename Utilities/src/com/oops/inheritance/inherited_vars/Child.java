@@ -1,4 +1,4 @@
-package com.inheritance.general.inherited_vars;
+package com.oops.inheritance.inherited_vars;
 
 public class Child extends Parent{
      int j;

@@ -1,4 +1,4 @@
-package com.inheritance.general.overriding;
+package com.oops.inheritance.overriding;
 
 public class Snake extends Animal
 {
