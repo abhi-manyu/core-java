@@ -1,6 +1,6 @@
 package com.oops.inheritance.overriding;
 
-public class Human extends Animal
+public class Human extends Creature
 {
      @Override
      public void move()
