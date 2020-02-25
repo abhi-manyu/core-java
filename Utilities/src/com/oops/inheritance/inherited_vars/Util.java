@@ -9,7 +9,7 @@ public class Util {
 		c.i=20;
 		c.j=30;
 		c.display();
-		System.out.println(p.getClass().getSimpleName());
+		System.out.println(p.getClass());
 
 	}
 
