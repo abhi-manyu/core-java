@@ -6,6 +6,7 @@ public class Child extends Parent{
   {
 	  System.out.println(i);
 	  System.out.println(j);
+	  System.out.println(super.i);
   }
   
 }
