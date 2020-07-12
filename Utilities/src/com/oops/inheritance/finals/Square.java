@@ -7,4 +7,10 @@ public class Square extends Shape
 		super(length, width);
 	}
 
+	@Override
+	double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

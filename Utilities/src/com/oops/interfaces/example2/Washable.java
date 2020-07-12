@@ -1,4 +1,4 @@
-package com.oops.interfaces.example1;
+package com.oops.interfaces.example2;
 
 public interface Washable {
 	public void wash();
