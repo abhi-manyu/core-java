@@ -1,0 +1,107 @@
+what is  lambda expression : 
+ans : 
+
+It is an anonymous(name less), with out return type, with out any access modifiers function
+ example : 
+ 
+ normal method:
+ ----------------------
+ public void print()
+ {
+    System.out.println(""Hello this is a lambda expression");
+ }
+ 
+ lambda method:
+ ----------------------
+ there souldn't be any method name -----> so "print" should not be there
+ 
+ there should not be return type ------> so void or int or double or any return type sould not be there
+ 
+ there should not be any modifie------> so public/private/default nothing should be there
+ 
+ so final expression will be like :
+ 
+ ()->
+ {
+   System.out.println(""Hello this is a lambda expression");
+ }
+ 
+ note : 
+ ----------
+ {
+   System.out.println(""Hello this is a lambda expression");
+ }
+ 
+ the above lines called the body of lambda expression, so if there is multiple line in lambda expression,
+ then cumpolsoryly we have to use curly brasses {     } like this
+ 
+ or else if our expression contain only one line then brasses is not required
+ 
+ so if we convert the above method to lambda expression, then
+ 
+ () -> System.out.println(""Hello this is a lambda expression");
+ 
+ note : 
+ -------------
+ 
+ As per we know by above code, there should not be any name , return type,and no modifier, even some time 
+ arguments and curly brasses also no need to present.
+ 
+ example :
+  
+public void print()
+ {
+    System.out.println(""Hello this is a lambda expression");
+ }
+ 
+ 
+ lambda expression : 
+ ---------------------
+ 
+ (int a, int b)-> System.out.println(""Hello this is a lambda expression");
+ 
+ the above line can be furthur optimised as removing of type of the arguments, bcz compiler 
+ is clever enough to recognize type of arguments automatically.
+ 
+ so final expression will be like :
+ 
+(a,b)-> System.out.println(""Hello this is a lambda expression");
+ 
+ 
+Note:
+---------
+ some times we need to return the value of our calculation like 
+ 
+ public int multiply(int a, int b)
+ {
+    return a*b;
+ }
+ 
+ if we will convert it to lambda, then :
+ 
+ (a,b) -> {return a*b;}
+ 
+      OR
+      
+ (a,b) -> a*b ;
+ 
+ Note : 
+ 
+ if we are returning something and suppose it is a single line code so no need to mention return key word
+  compiler will understand that here we need to return something, and will take care that.
+  
+if we are returning something and the body is multi line, so we need to use brasses, 
+so there in that situation we explicitly write return statement like below: 
+
+example :
+ 
+ (a,b) ->{
+           System.out.println("returning multiplication result");
+           return a*b;
+         }
+ 
+ 
+ 
+ 
+ 
+ 
