@@ -16,16 +16,12 @@ public class Calculator
 		System.out.println("enter 2nd number to perform above operation");
 		Double num2 = scn.nextDouble();
 		
-		switch (number)
-		{
-		case 1:
-			if(num1!=null && num2!=null)
-				(num1,num2)->System.out.println(num1+num2);
-			break;
-
-		default:
-			break;
-		}
+		/*
+		 * switch (number) { case 1: if(num1!=null && num2!=null)
+		 * (num1,num2)->System.out.println(num1+num2); break;
+		 * 
+		 * default: break; }
+		 */
 		
 	}
 }
