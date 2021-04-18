@@ -12,7 +12,9 @@ public class Experiments
 		names.add("Loki");
 		names.add("Oddin");
 		System.out.println(names.size());
-		names.add(4,"Thanos");
+		//index out of bound exception
+		//names.add(4,"Thanos");
+		names.add("Thanos");
 		System.out.println(names.size());
 }
 }

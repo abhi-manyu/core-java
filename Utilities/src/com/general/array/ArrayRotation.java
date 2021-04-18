@@ -9,7 +9,7 @@ public class ArrayRotation {
 	  System.out.println("orginal array is : "+Arrays.toString(arr));
 	  try
 	    {
-		  rotateToLeft(arr, 2);
+		  rotateToLeft(arr, 3);
 	    }
 	  catch (Exception e)
 	  {
@@ -20,7 +20,7 @@ public class ArrayRotation {
   {
 	  // used for getting a sub array of elements in a given array
 	  int[] temp=Arrays.copyOfRange(arr, 0,n);
-	  //System.out.println(Arrays.toString(temp));
+	  System.out.println(Arrays.toString(temp));
 	  for(int i=0;i<arr.length-n;i++)
 	  {
 		  arr[i]=arr[i+n];

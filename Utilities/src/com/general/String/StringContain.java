@@ -4,7 +4,7 @@ public class StringContain
 {
 	public static void main(String[] args)
 	{
-		printPattern(3);
+		printPattern(5);
 	}
 	
 	static void printPattern(int size)

@@ -5,7 +5,7 @@ public class TimeConvert2
 
 	public static void main(String[] args)
 	{
-		String s="01:00:00AM";
+		String s="15:00:00AM";
 		System.out.println(changeDate(s));
 	}
 

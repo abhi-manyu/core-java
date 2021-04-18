@@ -1,0 +1,188 @@
+lambda function : 
+------------------------
+this is a nameless, with out return type and without modifiers function
+
+examples : 
+
+public void print()
+	{
+		System.out.println("hello this is lambda");
+	} 
+
+lambda function : 
+  
+  ()->{System.out.println("hello this is lambda");}
+  
+* If lambda function body contains only one line, then curly braces "{..}" are not 
+mandatory,
+
+so , lambda function : 
+
+()->System.out.println("hello this is lambda");
+
+Example 2 : 
+
+normal method : 
+
+public void print(int a, int b)
+	{
+		System.out.println(a+b);
+	}
+	
+lambda function : 
+(int a, int b)-> System.out.println(a+b);
+
+
+
+* compiler has capability to assume the type of theLambda function arguments,
+so no need to mention the types
+
+so the lambda function will be : 
+
+(a,b)-> System.out.println(a+b);
+
+
+Example 3 : 
+
+normal method : 
+
+public int findSquare(int n)
+	{
+		return n*n ;
+	}
+
+Lambda function : 
+if returnning something , then curly braces should be present irrespective of having
+only one line also.
+
+i.e
+
+(n)-> { return n*n; }
+   or
+(n)->n*n;   ---------> this also returns the value;
+
+again if only one argument is there, no need to mention inside the parenthesis "()"
+
+i.e
+
+n->n*n;   ---------> this also returns the value;
+
+
+Example 4 : 
+normal method :
+
+public int findLength(String s)
+	{
+		return s.length() ;
+	}
+	
+Lambda function :
+
+s->s.length;
+
+
+--------------------------------
+Functional Interface
+----------------------------------
+the Interface contains exactly only one abstract method
+
+i.e
+
+Interface Interf
+{
+   public void m1();
+}
+
+* @FunctionalInterface is an annotation used to warn compiler for declaring a 
+Functional Interface
+
+i.e
+
+@FunctionalInterface
+Interface Interf
+{
+   public void m1();
+   public void m2();      // gives compile time error, though it contains 2 
+                          // abstract methods, so it is just a normal interface
+}
+
+
+--------------------------------------------------------------
+Lambda function example with Functional Interface
+--------------------------------------------------------------
+
+Example 1 : this example demonstrates normal flow of an interface and an
+implementation class and how to call the overridden method present in the interface
+
+// this is a functional interface containing only one abstract method
+**************************************************************************
+@FunctionalInterface
+public interface Interface1
+{
+   public void print1();
+}
+
+//this is an implementation class that provides implementation for above interface
+************************************************************************************
+public class Interface1Impl implements Interface1
+{ 
+  //normal method implementation
+  
+  @Override public void print1()
+  { System.out.println("Hello world");
+  
+  }
+  
+}
+
+// this is a client class or dummy class 
+
+public class Client
+{
+	public static void main(String[] args)
+	{
+	   Interface1 i = new Interface1Impl();
+	   i.print1();
+	}
+}
+
+** If we convert the above program using lambda, then the total implementation class
+itself is not needed, complete example is present in 
+package  : /Utilities/src/com/java8/example/functionalInterface
+
+converting above example using lambda : 
+
+interface : 
+
+@FunctionalInterface
+public interface Interface1
+{
+   public void print1();
+}
+
+client class :
+
+public class Client
+{
+
+	public static void main(String[] args)
+	{
+		  Interface1 i = ()->System.out.println("Hello world by lambda");
+		  i.print1();
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

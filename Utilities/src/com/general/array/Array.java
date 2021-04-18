@@ -15,7 +15,7 @@ public class Array
 	public static void main(String[] args)
 	{
         int[] arr= {5,8,3,7,9};
-        //print_MaxSum(arr);
+        print_MaxSum(arr);
         print_Min_Sum(arr);
         print();
 	}
