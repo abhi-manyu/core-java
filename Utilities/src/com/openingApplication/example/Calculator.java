@@ -7,6 +7,7 @@ public class Calculator
 		{
            try {
         	   Runtime rt = Runtime.getRuntime();
+        	   //Process prc =   rt.exec("C:\\WINDOWS\\system32\\calc");
         	   Process prc =   rt.exec("C:\\WINDOWS\\system32\\calc");
         	   Thread.sleep(5000);
    			prc.destroyForcibly();
